@@ -1,0 +1,29 @@
+#search{
+    width: 70%;
+    max-width: 200px;
+    
+}
+#historyLine{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.weather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    margin: 10px;
+    
+}
+
+.icons{
+    display: inline-block;
+    height: 200px;
+    width: 190px;
+    margin: 2px;
+    border: 2px solid rgb(45, 49, 79);
+
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><center>Weather Dashboard</center></h1>
+    <script src="main.js"></script>
+    
+    <div class="weather">
+        <h3>Search for a City</h3>
+        <div class="search">
+            <input type="search" value="" id="search" onchange="searchHistory() , openPage() , getinfo()"> 
+            <button onclick="searchHistory() , openPage() ,getinfo()">Search</button>
+            </div>
+        <h2 id="cityName">Today's Weather</h2>
+        <div class="temp">Temp: 112°</div>
+        <div class="wind">Wind: 6.2 km/h</div>
+        <div class="Humidity">Humidity: 60%</div>
+        <div class="description">Sunny</div>
+    </div>
+
+    <center>
+    <div id="weatherContainer">
+        <div id="iconsContainer">
+            <div class="icons">
+                <p class="weather" id="day1"></p>
+                <!-- <p class="temp1" id="day1date">Loading...</p> -->
+                <div class="image"><img src="thunderstorms.png" class="imgClass" id="img1" alt=""></div>
+                <p class="temp1" id="day1temp">Loading...</p>
+                <p class="wind1" id="day1wind">Loading...</p>
+                <p class="Humidity1" id="day1hum">Loading...</p>
+            </div>
+            <div class="icons">
+                <p class="weather" id="day2"></p>
+                <!-- <p class="temp1" id="day2date">Loading...</p> -->
+                <div class="image"><img src="thunderstorms.png" class="imgClass" id="img1" alt=""></div>
+                <p class="temp1" id="day2temp">Loading...</p>
+                <p class="wind1" id="day2wind">Loading...</p>
+                <p class="Humidity1" id="day2hum">Loading...</p>
+            </div>
+            <div class="icons">
+                <p class="weather" id="day3"></p>
+                <!-- <p class="temp1" id="day1date">Loading...</p> -->
+                <div class="image"><img src="thunderstorms.png" class="imgClass" id="img1" alt=""></div>
+                <p class="temp1" id="day3temp">Loading...</p>
+                <p class="wind1" id="day3wind">Loading...</p>
+                <p class="Humidity1" id="day3hum">Loading...</p>
+            </div>
+            <div class="icons">
+                <p class="weather" id="day4"></p>
+                <!-- <p class="temp1" id="day4date">Loading...</p> -->
+                <div class="image"><img src="thunderstorms.png" class="imgClass" id="img1" alt=""></div>
+                <p class="temp1" id="day4temp">Loading...</p>
+                <p class="wind1" id="day4wind">Loading...</p>
+                <p class="Humidity1" id="day4hum">Loading...</p>
+            </div>
+            <div class="icons">
+                <p class="weather" id="day5"></p>
+                <!-- <p class="temp1" id="day5date">Loading...</p> -->
+                <div class="image"><img src="thunderstorms.png" class="imgClass" id="img1" alt=""></div>
+                <p class="temp1" id="day5temp">Loading...</p>
+                <p class="wind1" id="day5wind">Loading...</p>
+                <p class="Humidity1" id="day5hum">Loading...</p>
+            </div>
+        </div>
+    </div></center>
+    <div id="historyLine">
+        <h2>City's Searched</h2>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
